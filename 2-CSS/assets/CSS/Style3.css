@@ -18,7 +18,7 @@ h1,h2{
     font-weight: bold;
 }
 .bleu{
-    color: blue;
+    color: blueviolet;
 }
 .italic{
     font-style: italic;
@@ -29,4 +29,11 @@ hr{
     /*margin-left: 25%;
     margin-right: 25%;*/
     width: 150px;
+}
+.rouge{
+    color: red;
+}
+p span:first-child{
+    color: red;
+    font-size: 25px;
 }
