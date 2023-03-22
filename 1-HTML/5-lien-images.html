@@ -7,18 +7,22 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="debut">
+        <h1>Titre début</h1>
+    </div>
     <!--URL Absolue : URL en entier-->
     <!--HTTPS (protocole) + www (sous-domaine) + google (domaine) + .fr (extension) + urlpage-->
     <a href="https://www.google.fr" title="Google">Lien vers Google</a>
 
     <!--ABSOLUE EXTERNE-->
+    <!--Lien CDN, image appelée pour plus de rapidité, à utiliser pour placer des éléments fixes qui ne change pas-->
     <img width="200" src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://www.pixel-online.fr/wp-content/uploads/2022/12/logo-pixel-500x81-copie.webp" alt="">
     
     <!--ABSOLUE INTERNE (/) par rapport à la racine de notre projet ici COURS2023_MONTRAVAIL-->
     <!--A utiliser de préférence pour mise à jour-->
     <img width="60" src="/1-HTML/image/validation.gif" alt="">
 
-    <!--RELATIF INTERNE (par rapport au fichier 5-lien-images)-->
+    <!--RELATIF INTERNE (par rapport au fichier appelant le lien)-->
     <img width="60" src="image/validation.gif" alt="">
     
     <!--RELATIF INTERNE (par rapport au fichier 5-lien-images) même chose que précédent-->
@@ -28,7 +32,29 @@
     
     <a href="./exercice/0-test-balise.html">page tableaux</a><br/>
     <a href="./0-test-balise.html">page tableaux</a><br/>
+    <!--Fait référence au dossier O-GIT-->
     <a href="../0-GIT/git.pdf">fichier git</a><br/>
+    <a href="/0-GIT/git.pdf">fichier git</a><br/>
 
+    <a href="#ancre">Lien vers Titre bloc section</a><br/>
+    <a href="#service">Lien vers Titre bloc service</a><br/>
+    <a href="#contact">Lien vers Titre bloc contact</a><br/>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
+    <div id="ancre">
+        <h1>Titre bloc section</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae inventore culpa porro, quibusdam ullam omnis debitis beatae facere labore, ipsa asperiores, eligendi necessitatibus perferendis. Autem vitae quo tenetur suscipit! Officiis.</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div id="service">
+        <h1>Titre bloc service</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae inventore culpa porro, quibusdam ullam omnis debitis beatae facere labore, ipsa asperiores, eligendi necessitatibus perferendis. Autem vitae quo tenetur suscipit! Officiis.</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div id="contact">
+        <h1>Titre bloc contact</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae inventore culpa porro, quibusdam ullam omnis debitis beatae facere labore, ipsa asperiores, eligendi necessitatibus perferendis. Autem vitae quo tenetur suscipit! Officiis.</p>
+    </div>
+    <a href="#debut">Lien vers début</a><br/>
 </body>
 </html>
