@@ -28,7 +28,7 @@ p{
 
 hr{
     border: solid #125843;
-    border-width: thin medium thick 1em;
+    border-width: 5px;
     margin-left: 25%;
     margin-right: 25%;
 }
