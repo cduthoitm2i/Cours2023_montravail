@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice formulaire</title>
+</head>
+<body>
+    <h1 style="color: blue;">Formulaire</h1>
+    <form method="get" action="" enctype="multipart/form-data">
+        <fieldset>
+        <legend><strong>Vos informations personnelles&nbsp;:</strong></legend>
+        <table border="0">
+            <tbody>
+                <tr>
+                    <td><label for="civilite">Votre civilité&nbsp;:</label></td>
+                    <td>
+                        <select name="civilite" id="civilite" required>
+                            <option value="" selected>--Choisissez votre civilité--</option>
+                            <option value="M.">M.</option>
+                            <option value="Mme">Mme</option>
+                         </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gender" value="Monsieur">Monsieur</td>
+                    <td><input type="radio" name="gender" value="Madame">Madame</td>
+                   
+                </tr>
+                <tr>
+                    <td><label for="nom">Votre nom&nbsp;:</label></td>
+                    <td><input type="text" id="nom" name="nom" required pattern=".{3,}" placeholder="Votre nom">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Votre email&nbsp;: </td>
+                    <td><input type="email" name="email" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Votre âge&nbsp;:</label></td>
+                    <td><input type="number" id="age" name="age" min="18" max="100" value="18">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+       
+        
+
+        
+        <p><textarea name="description" id="" cols="30" rows="10" placeholder="Votre description" minlength="50">Votre description</textarea></p>
+        <p>
+            <input type="file" name="fichier" accept="image/jpeg">
+        </p>
+        
+        <input type="submit" value="Inscription" formmethod="get"><br>
+    </form>
+</fieldset>
+</body>
+</html>
