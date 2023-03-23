@@ -1,0 +1,112 @@
+/* Import de Dafont, police sur le serveur*/
+@font-face {
+    font-family: 'LombardiaScript';
+    src: url("/2-CSS/assets/CSS/fonts/LombardiaScript.otf");
+}
+/* écriture import, dans ce cas pas besoin d'ajouter dans HTML*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;@400;@500;@600;@700&display=swap');
+
+body{
+    font-size: 20px;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+h1{
+    color: rgb(19, 118, 185);
+    /* en em, prend la valeur du font-size du body, ne pas mélanger les px et em */
+    font-size: 2em;
+    /* Laisser au moins trois fontes */
+    font-family: 'Quicksand', Arial, sans-serif;
+    /* On a récupérer de Google deux graisses, 300 et 700*/
+    /* font-weight: 300;*/
+    font-weight: 700;
+    border: 3px solid black;
+}
+p{
+    font-family: 'LombardiaScript', Arial, sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    /*text-decoration: line-through;*/
+}
+p.span{
+    background: blue;
+    /* Ne s'applique pas sur une balise de type inline*/
+    text-align: center;
+    /* Pour transformer un élément inline en block*/
+}
+span{
+    display: block;
+    width: 100%;
+    /* pas utilisable en inline, dans F12 -> éléments, la ligne apparait en grisé et ne peut pas être sélectionnée*/
+    width: 300px;
+    margin-top: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+.classic{
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-weight: 300;
+    text-decoration: line-through;
+    /* Ne s'applique que sur une balise bloc, pas inline*/
+    border: 1px solid black;
+    text-align: center;
+}
+
+p#info1{
+    width: 30%;
+    height: 100px;
+    background: rgb(177, 167, 187);
+    color: white;
+    text-align: right;
+    /* display: inline-block; */
+    /* Dans les sens des aiguilles d'une montre, haut, droit, bas, gauche*/
+    /* Marge extérieur sur block ou inline-block*/
+    margin: 5px 25px 55px 15px;
+    /* Haut, gauche+droite*/
+    /* margin: 5px 25px; */
+    /* identique partout*/
+    /* margin: 25px; */
+    /* margin du haut*/
+    /* margin-top: 5px; */
+    /* Marge intérieur sur block ou inline-block, peut agrandir le cadre*/
+    padding: 25px;
+    /* Haut, gauche+droite*/
+    /* padding: 5px 25px; */
+    /* identique partout*/
+    /* padding: 25px; */
+    /* padding du haut*/
+    /* padding-top: 5px; */
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+p#info1:hover{
+    box-shadow: 10px 5px 5px #cccccc;
+    width: 40%;
+    height: 100px;
+    transition-duration: 1s;
+}
+p#info2{
+    width: 20%;
+    height: 100px;
+    background: green;
+    color: white;
+    text-align: right;
+    /* display: inline-block; */
+}
+p#info3{
+    width: 200%;
+    height: 600px;
+    min-width: 200px;
+    text-align: right;
+    /* display: inline-block; */
+    background-color: #cccccc;
+    background-image: url('/2-CSS/image/cockatoo-gc292d4e80_640.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 25px;
+}
+img{
+    width: 100px;
+    min-width: 300px;
+}
