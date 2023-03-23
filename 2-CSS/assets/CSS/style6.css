@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: red;
+    font-style: italic;
+    /* transition est à placer dans la balise d'état et non dans le hover*/
+    transition: all 1s;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: green;
+    font-size: 20px;
+}
+a:active{
+    /* Activer lors d'un clic droit sur le lien*/
+    background-color: aqua;
+}
+a:focus{
+    background-color: cornflowerblue;
+}
+a:visited{
+    /* Quand on a déjà cliqué sur le lien*/
+    color: goldenrod;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: all 2s;
+    animation: mymove 5s infinite;
+    position:absolute;
+    margin-left: 20px;
+}
+div:hover {
+    width: 300px;
+    background-color: rgb(102, 93, 145);
+}
+@keyframes mymove {
+    0%
+    {
+        top:30px
+    }
+    25%
+    {
+        top:300px;transform: rotate(30deg)
+    }
+    50%
+    {
+        top:100px;transform: rotate(100deg)
+    }
+    100%
+    {
+        top:30px;
+    }
+}

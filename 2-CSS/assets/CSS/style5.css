@@ -92,6 +92,7 @@ p#info2{
     background: green;
     color: white;
     text-align: right;
+    font-family: 'Fira Sans', sans-serif;
     /* display: inline-block; */
 }
 p#info3{
@@ -106,6 +107,7 @@ p#info3{
     background-position: center;
     background-size: cover;
     padding: 25px;
+    font-family: 'Fira Sans', sans-serif;
 }
 img{
     width: 100px;

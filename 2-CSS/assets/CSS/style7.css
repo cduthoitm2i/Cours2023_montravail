@@ -1,0 +1,30 @@
+div{
+    float: left;
+    padding: 15px;
+    /* voir https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing*/
+    /* Ancienne méthode*/
+    box-sizing: border-box;
+}
+.div1{
+    background: red;
+    width: 20%;
+}
+.div2{
+    background: yellow;
+    width: 80%;
+}
+.div3{
+    background: green;
+    width: 100%;
+}
+}
+.div4{
+    background: aliceblue;
+    width: 100%;
+}
+.footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
