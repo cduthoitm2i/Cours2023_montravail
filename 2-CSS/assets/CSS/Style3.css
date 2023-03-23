@@ -33,7 +33,36 @@ hr{
 .rouge{
     color: red;
 }
-p span:first-child{
+/* Applique juste au premier span qui suit un p*/
+/*p span:first-child{
     color: red;
+    font-size: 25px;
+}*/
+/* Applique à tous les span dans p dans div sans balises intermédiaires*/
+div p>span{
+    color: red;
+    font-size: 25px;
+}
+/* Applique à tous les span dans p dans div avec balises intermédiaires*/
+/*div p span{
+    color: red;
+    font-size: 25px;
+}*/
+
+h1+span {
+    color: blue;
+    font-size: 50px;
+}
+input[type="text"] {
+    border: 10px solid black;
+}
+input[type="submit"] {
+    cursor: pointer;
+    background: red;
+    color: white;
+    padding: 10px;
+    text-transform: uppercase;
+}
+div#entete.bleu p:first-child{
     font-size: 25px;
 }
