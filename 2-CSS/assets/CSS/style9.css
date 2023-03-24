@@ -1,10 +1,32 @@
-#conteneur{
+.row{
     display: flex;
+    border: 1px solid;
+    gap: 10px 30px;
+}
+
+#conteneur{
     flex-wrap: wrap;
     align-content: center;
     flex-direction: row;
     justify-content: space-around;
 }
+
+#conteneur2{
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#conteneur3{
+    height: 500px;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
 .element{
     width: 150px;
 }
@@ -13,7 +35,6 @@
 }
 .vert{
     background: green;
-    height: 100px;
 }
 .bleu{
     background: blue;

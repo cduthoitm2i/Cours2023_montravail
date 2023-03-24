@@ -1,0 +1,45 @@
+/* Animation*/
+
+/* Template*/
+.row{
+    display: flex;
+}
+
+#logo{width: 20%;}
+#search{width: 50%;}
+#social{width: 30%;}
+
+.element{
+    width: 150px;
+}
+.rouge{background: red;}
+.vert{background: green;}
+.bleu{background: blue;}
+
+/* Media dans l'ordre de la taille des écrans*/
+@media all and (min-width:401px) and (max-width:1000px) {
+    .row{
+        flex-direction: column-reverse;
+    }
+    #logo{
+        width: 50%;
+    }
+}
+
+@media all and (max-width:400px)
+{
+    .row{
+        flex-direction: column;
+    }
+    div#conteneur>div{
+        width: 100%;
+    }
+    div#social{
+        display: none;
+    }
+    div#logo{
+        color: gray;
+        font-weight: bold;
+        background: yellow;
+    }
+}
