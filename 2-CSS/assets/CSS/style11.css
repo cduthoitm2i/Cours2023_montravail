@@ -1,3 +1,35 @@
 body{
     background-color: beige;
 }
+
+header{
+    position: fixed;
+    width: 100%;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: beige;
+    width: 100%;
+}
+
+.btn{
+    background-color: blueviolet;
+    border: 0;
+}
+.btn:hover{
+    font-weight: bold;
+}
+
+h1{
+    color: blueviolet;
+    padding-top: 70px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 3px dashed #CCC;
+}
+
+label{
+    font-weight: bold;
+}
