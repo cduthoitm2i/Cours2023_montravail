@@ -1,0 +1,43 @@
+Algortithme CalculTVA
+{Saisir un prix HT et afficher le prix TTC correspondant}
+
+Constante TVA : entier <- 20
+
+Variables prixHT, prixTTC, montantTVA : réel
+
+Début
+	afficher("Donnez-moi un prix HT : ")
+	saisir (prixHT)
+	prixTTC <- prixHT * (1 + (TVA/100)) {prix final TTC}
+	montantTVA <- prixTTC - prixHT
+
+	Afficher(prixHT,"€ H.T. + TVA : ",TVA,"% = ",prixTTC,"€ TTC dont :",montantTVA,"€ de TVA")
+Fin
+
+
+
+EN JavaScript : 
+const TVA = 20
+let prixHT, prixTTC, montantTVA
+
+prixHT = parseFloat(prompt("Donnez-moi un prix HT :"))
+prixTTC = prixHT * (1 + TVA/100)
+montantTVA = prixTTC - prixHT
+
+console.log(prixHT + " € H.T. + TVA : " + TVA + " % = " + prixTTC + " € TTC, dont : " + montantTVA = " € de TVA")
+
+
+en PHP : 
+<?php
+define("TVA", 20);
+$prixHT;
+$prixTTC;
+$montantTVA;
+
+$prixHT = $_GET['prixHT'];
+$prixTTC = $prixHT * (1 + TVA/100);
+$montantTVA = $prixTTC - $prixHT;
+
+
+echo $printHT." € H.T. + TVA : "$TVA" % = "$prixTTC" € TTC dont : ".$montantTVA " € de TVA";
+?>
