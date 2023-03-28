@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Algo>
-    <description texte="Inversion variables" courant="valTemp PREND_LA_VALEUR valA"/>
+    <description texte="Inversion variables" courant="AFFICHER &quot;Après inversion, vous m'avez donné &quot;"/>
     <extension extnom="inactif"/>
     <fonction fctcode="" fctetat="inactif"/>
     <F2 F2para="" F2lignes="" F2etat="inactif" F2defaut=""/>
@@ -16,14 +16,14 @@
         <item code="4#Donnez-moi deux valeurs :#1" algoitem="AFFICHER &quot;Donnez-moi deux valeurs :&quot;"/>
         <item code="2#valA#pasliste" algoitem="LIRE valA"/>
         <item code="2#valB#pasliste" algoitem="LIRE valB"/>
-        <item code="4#Vous m'avez donner, #0" algoitem="AFFICHER &quot;Vous m'avez donner, &quot;"/>
+        <item code="4#Vous m'avez donné, #0" algoitem="AFFICHER &quot;Vous m'avez donné, &quot;"/>
         <item code="3#valA#0#pasliste" algoitem="AFFICHER valA"/>
         <item code="4# et #0" algoitem="AFFICHER &quot; et &quot;"/>
         <item code="3#valB#1#pasliste" algoitem="AFFICHER valB"/>
         <item code="5#valTemp#valA#pasliste" algoitem="valTemp PREND_LA_VALEUR valA"/>
         <item code="5#valA#valB#pasliste" algoitem="valA PREND_LA_VALEUR valB"/>
         <item code="5#valB#valTemp#pasliste" algoitem="valB PREND_LA_VALEUR valTemp"/>
-        <item code="4#Vous m'avez donné #0" algoitem="AFFICHER &quot;Vous m'avez donné &quot;"/>
+        <item code="4#Après inversion, vous m'avez donné #0" algoitem="AFFICHER &quot;Après inversion, vous m'avez donné &quot;"/>
         <item code="3#valA#0#pasliste" algoitem="AFFICHER valA"/>
         <item code="4# et #0" algoitem="AFFICHER &quot; et &quot;"/>
         <item code="3#valB#1#pasliste" algoitem="AFFICHER valB"/>
