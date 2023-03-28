@@ -1,0 +1,110 @@
+algorithme note_selon
+{utilisation du selon}
+ 
+variable note : entier
+ 
+debut
+    Afficher("Renseigner une note")
+    Saisir(note)
+ 
+    selon note :
+        0 :
+	  1 :
+	  2 :
+	  3 :
+	  4 : afficher("Insuffisant")
+              break
+        5 :   
+	  6 : afficher("Suffisant")
+              break
+        7 : 
+	  8 : 
+	  9 : afficher("Très bien")
+              break
+	  10 : afficher("Parfait")
+		  break
+        autres: afficher("Note invalide")
+    fselon
+    afficher("Fin du programme")
+fin
+
+Version alternative : 
+debut
+    Afficher("Renseigner une note")
+    Saisir(note)
+ 
+    selon vrai
+	note >=0 et note <= 4 : afficher("Insuffisant")
+		break
+	note >=5 et note <=6 : afficher("Suffisant")
+		break
+	note >=7 et note <=9 : afficher("Très bien")
+            break
+	note == 10 :		afficher("Parfait")
+		break
+	 autres: afficher("Note invalide")
+
+    fselon
+    afficher("Fin du programme")
+fin
+
+
+
+
+Par exemple sur https://onlinephp.io/ :
+En PHP (méthode 1) : 
+<?php
+$note = "7";
+
+switch($note) {
+	case 0;
+	case 1;
+	case 2;
+	case 3;
+	case 4;
+		echo "Insuffisant";
+		break;
+	case 5;
+	case 6;
+		echo "Suffisant";
+		break;
+	case 7;
+	case 8;
+	case 9;
+		echo "Très bien";
+		break;
+	case 10;
+		echo "Parfait";
+		break;
+	default ;
+		echo "Note invalide";
+}
+
+echo "Fin du programme"
+?>
+
+
+En PHP (méthode alternative) : 
+<?php
+$note = "8";
+
+switch(true) {
+	case ($note >=0 and $note<=4) ;
+		echo "Insuffisant";
+		break;
+	case ($note >=5 and $note<=6) ;
+		echo "Suffisant";
+		break;
+	case ($note >=7 and $note<=9) ;
+		echo "Très bien";
+		break;
+	case ($note == 10) ;
+		echo "Parfait";
+		break;
+	default ;
+		echo "Note invalide";
+}
+
+echo "Fin du programme"
+?>
+

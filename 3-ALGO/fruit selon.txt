@@ -1,0 +1,49 @@
+Algorithme choix_fruit_selon
+debut
+	Afficher ("Choisir votre fruit dans la liste suivante : kiwi, fraise, banane, pomme, orange")
+	Saisir(fruit)
+	
+	selon fruit : 
+		"kiwi" : 	
+		"pomme" : 	afficher("vert")
+			   	break
+		"fraise" : 	afficher("rouge")
+			   	break
+		"banane" : 	afficher("jaune")
+			   	break
+		"orange" : 	afficher("orange")
+			   	break
+		autres : 	afficher("fruit non reconnu")
+	fselon
+	afficher("Fin du programme")
+fin
+
+
+Par exemple sur https://onlinephp.io/ :
+En PHP : 
+<?php
+$fruit = "kiwi";
+
+switch($fruit) {
+	case "kiwi";
+	case "pomme";
+		echo "Fruit de couleur verte";
+		break;
+	case "fraise";
+		echo "Fruit de couleur rouge";
+		break;
+	case "banane";
+		echo "Fruit de couleur jaune";
+		break;
+	case "orange";
+		echo "Fruit de couleur orange";
+		break;
+	default ;
+		echo "Fruit non reconnu";
+}
+
+echo "Fin du programme"
+?>
+
+
+Commentaire : on doit mettre un break pour tous les cases ayant un résultat différent
