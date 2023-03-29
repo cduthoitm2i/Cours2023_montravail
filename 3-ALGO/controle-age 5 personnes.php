@@ -2,7 +2,8 @@
 define('MAJEUR',18);
 $age;
 $difference;
-
+$i;
+$valeurMax;
 
 echo "SAISIR AGE\r\n";
 $age=22;
