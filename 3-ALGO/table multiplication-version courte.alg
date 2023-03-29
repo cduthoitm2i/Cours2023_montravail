@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Algo>
-    <description courant="AFFICHER cpt" texte="Table de multiplication (version courte, avec boucle)"/>
+    <description courant="valeurMax PREND_LA_VALEUR 10" texte="Table de multiplication (version courte, avec boucle)"/>
     <extension extnom="inactif"/>
     <fonction fctcode="" fctetat="inactif"/>
     <F2 F2lignes="" F2defaut="" F2etat="inactif" F2para=""/>
@@ -20,7 +20,7 @@
         <item algoitem="POUR cpt ALLANT_DE 1 A valeurMax" code="12#cpt#1#valeurMax">
             <item algoitem="DEBUT_POUR" code="13#debutpour"/>
             <item algoitem="AFFICHER chiffre" code="3#chiffre#0#pasliste"/>
-            <item algoitem="AFFICHER &quot; multiplié par &quot;" code="4# multiplié par #0"/>
+            <item algoitem="AFFICHER &quot; x &quot;" code="4# x #0"/>
             <item algoitem="AFFICHER cpt" code="3#cpt#0#pasliste"/>
             <item algoitem="AFFICHER &quot; = &quot;" code="4# = #0"/>
             <item algoitem="resultat PREND_LA_VALEUR chiffre*cpt" code="5#resultat#chiffre*cpt#pasliste"/>
