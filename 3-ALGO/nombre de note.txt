@@ -1,0 +1,36 @@
+Demander à l’utilisateur de saisir un nombre de notes indéterminé (-1 pour stop), en stockant ces notes dans un tableau.
+Afficher ensuite la note la plus haute.
+Faire deux boucles : une pour remplir le tableau, une autre pour trouver la note la plus haute.
+
+
+
+Algorithme noteHaute {permet d'afficher la note la plus élevée}
+
+
+Variables	cpt,tableau note :réel
+
+Constante : max : entier <- 20
+		min : entier <- 0
+		stop : entier <- -1
+
+debut
+	cpt <- 0
+	repeter	{on répète tant que l'on n'a pas saisi -1}
+		afficher("SAISIR une note entre ",min," et ",max, " et arrêter la saisie avec ",stop)
+    		saisir(note)
+		si(note >= min et note <= max)alors
+			somme <- somme + note(i)
+			cpt <- cpt + 1	
+		fsi
+		tant que (note != stop) {-1 est égal à stop}
+
+	si(cpt == 0) alors {ajout d'une sécurité pour éviter de faire une division 0/0}
+			afficher ("La moyenne ne peut pas être calculée")
+		sinon
+			moyenne <- somme / cpt
+			afficher("La moyenne est de : ",moyenne)
+	fsi
+	
+	
+
+fin

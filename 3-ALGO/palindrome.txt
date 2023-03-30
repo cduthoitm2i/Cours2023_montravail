@@ -1,0 +1,23 @@
+Algo pour savoir si un mot est un palindrome
+Algorithme palindrome
+{si inversion des lettres mot = mot}
+je saisi "Kayak", me dire si c'est un palindrome
+length(variable) ou taille(variable) vous renvoi la taille de votre mot
+
+
+
+variable : 	mot : entier
+		mot2 <- mot
+		length : 
+
+debut
+	Afficher (Saisir un mot et savoir si c'est un palindrome)
+	saisir(mot)
+	mot2 <- mot
+	mot2 <- on inverse les lettres
+	si(length(mot) ET (length(mot2))
+		afficher(Le mot ",mot " est un palindrome)
+	sinon
+		afficher(Le mot ",mot " n'est pas un palindrome)
+	fsi
+fin

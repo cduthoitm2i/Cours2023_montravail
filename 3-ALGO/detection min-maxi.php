@@ -8,7 +8,7 @@ $minValeur;
 $maxValeur;
 
 while($cpt<=MAX){
-	echo "Entre votre valeur ".$cpt." :\n\r";
+	echo "Entrer votre valeur ".$cpt." :\n\r";
 	$valeur=10;
 	$valeur=1000;
 	$valeur=5;

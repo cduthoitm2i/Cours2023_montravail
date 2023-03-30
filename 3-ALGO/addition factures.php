@@ -17,4 +17,4 @@ for($cpt=1;$cpt<=$nbVal;$cpt=$cpt+1){
 echo "Le total des ".$nbVal." facture(s) est de : ".$totalValeurs." €\r\n";
 
 echo "Fin du programme"
-?
+?>

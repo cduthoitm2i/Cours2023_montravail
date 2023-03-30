@@ -1,0 +1,48 @@
+Demander à l'utilisateur de saisir deux nombres compris entre 5 et 50 et afficher ensuite le résultat de la multiplication.
+Il faut absolument que les deux nombres soient compris entre 5 et 50.
+
+Algorithme deuxNombres
+Constante	MIN:entier <- 5
+		MAX:entier <- 50
+Variables	nombre, resultat : réels
+		cpt
+
+
+// Comparaison répéter tant que
+debut
+	repeter
+		afficher(nombre1," n'est pas compris entre ",MIN," et ",MAX)
+		Saisir (nombre1)
+	tant que (nombre1<MIN ou nombre1>MAX)
+
+	repeter
+		afficher(nombre2," n'est pas compris entre ",MIN," et ",MAX)
+		Saisir (nombre2)
+	tant que (nombre2<MIN ou nombre2>MAX)
+
+	resultat <- nombre1 * nombre2
+	Afficher("Voici le résultat est : ",resultat)
+
+	
+fin
+
+
+// Comparaison tant que
+debut
+	Afficher ("Renseigner nombre1 entre 5 et 50")
+	Saisir (nombre1)
+	tant que (nombre1<MIN ou nombre1>MAX)
+		afficher(nombre1," n'est pas compris entre ",MIN," et ",MAX)
+		Saisir (nombre1)
+	ftq
+	Afficher ("Renseigner nombre2 entre 5 et 50")
+	Saisir (nombre2)
+	tant que (nombre2<MIN ou nombre2>MAX)
+		afficher(nombre2," n'est pas compris entre ",MIN," et ",MAX)
+		Saisir (nombre2)
+	ftq
+	resultat <- nombre1 * nombre2
+	Afficher("Voici le résultat est : ",resultat)
+
+fin
+

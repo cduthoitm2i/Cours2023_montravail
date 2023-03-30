@@ -1,0 +1,36 @@
+Algorithme Moyenne {permet de calculer la moyenne des notes}
+
+
+Variables	note,moyenne,sommme,cpt:réel
+
+Constante : max : entier <- 20
+		min : entier <- 0
+		stop : entier <- -1
+
+debut
+	somme <- 0
+	cpt <- 0
+	repeter	{on répète tant que l'on n'a pas saisi -1}
+		afficher("SAISIR une note entre ",min," et ",max, " et arrêter la saisie avec ",stop)
+    		saisir(note)
+		si(note >= min et note <= max)alors
+			somme <- somme + note
+			cpt <- cpt + 1	
+		fsi
+		tant que (note != stop) {-1 est égal à stop}
+
+	si(cpt == 0) alors {ajout d'une sécurité pour éviter de faire une division 0/0}
+			afficher ("La moyenne ne peut pas être calculée")
+		sinon
+			moyenne <- somme / cpt
+			afficher("La moyenne est de : ",moyenne)
+	fsi
+	
+
+fin
+
+
+
+
+
+

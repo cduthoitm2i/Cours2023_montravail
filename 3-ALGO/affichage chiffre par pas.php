@@ -32,3 +32,4 @@ for($i=1;$i<=$valeurMax;$i=$i+$pas){
 	$valeur = $chiffre + $i;
 	echo "".$valeur."\r\n";
 }
+?>
