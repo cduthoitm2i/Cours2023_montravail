@@ -5,17 +5,51 @@ je saisi "Kayak", me dire si c'est un palindrome
 length(variable) ou taille(variable) vous renvoi la taille de votre mot
 
 
+Algorithme palindrome
+{test inversion}
 
-variable : 	mot : entier
-		mot2 <- mot
-		length : 
+variable : 	mot : caracteres
+		i,indexmax : entier
+		isPalidnrone : booléen
 
+
+debut
+	isPalidnrone <- true {vrai}
+	i <- 0
+
+	Afficher ("Saisir un mot pour savoir si c'est un palindrome")
+	saisir(mot) {exemple : Laval}
+	indexmax <- taille(mot) {il y a 5 lettre dans ce mot}	
+	
+	tant que (i<indexmax et isPalidnrone == true) faire {<indemax car on commence à 0}
+		si(mot(i) != mot(indexmax-1-i)) alors
+			isPalidnrone <- false
+		fsi
+		i <- i+1
+	ftq
+	si(isPalidnrone == true) alors
+			afficher("palindrome")
+		sinon
+			afficher("Ce n'est pas un palindrome")
+	fsi
+
+
+fin
+
+
+
+
+
+
+
+
+Ma méthode !!
 debut
 	Afficher (Saisir un mot et savoir si c'est un palindrome)
 	saisir(mot)
 	mot2 <- mot
 	mot2 <- on inverse les lettres
-	si(length(mot) ET (length(mot2))
+	si(mot == mot2)
 		afficher(Le mot ",mot " est un palindrome)
 	sinon
 		afficher(Le mot ",mot " n'est pas un palindrome)
