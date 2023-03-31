@@ -1,0 +1,35 @@
+Créer une fonction servirBoisson qui affiche à l’écran « Voici un café », ou « Voici un thé » ou « Voici un cola ».
+La fonction prend une chaine de caractère en paramètre : c’est la boisson que l’on veut. (ex : thé)
+Si le paramètre ne correspond ni à café, thé ou cola, il faut afficher « Désolé, on ne sert pas cette boisson ».
+//Si le paramètre n’est pas passé, il faut servir par défaut un café.
+
+
+algorithme choixBoisson
+{XXXXX}
+
+variables: choix:caracteres
+
+procédure servirBoisson(boisson:caractere <- "café")	{par défaut c'est café qui est sélectionné par défaut}
+	debut
+		selon boisson :
+			"thé" : afficher("Voici un thé")
+			break
+			"café" : afficher("Voici un café")
+			break
+			"cola" : afficher("Voici un cola")
+			break
+			autre :  afficher ("On ne sert pas cette boisson")
+
+		finselon
+
+
+	fin
+
+
+
+debut
+	afficher('Choisissez votre boisson')
+	saisir(choix)
+	servirBoisson(choix)
+	servirBoisson()
+fin

@@ -1,0 +1,11 @@
+Demander à l’opérateur de saisir des notes interrompues par -1 les stocker dans un tableau et
+une fois terminé les trier par ordre croissant.
+Ensuite afficher à l’écran le tableau trié
+Exemple de données
+Entrée : 15 7 3 10 9 14 1
+Sortie : 1 3 7 9 10 14 15
+
+
+
+
+

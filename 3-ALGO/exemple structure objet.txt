@@ -1,0 +1,130 @@
+Un site E-commerce
+
+algorithme E-commerce
+
+structure Utilisateur {
+	identifiant : entier
+	nom : caracteres
+	prenom : caracteres
+	age : entier
+	mail : caracteres
+	motdepasse : caracteres
+	adresse : caracteres
+	codepostal : entier
+	ville : caracteres
+	tel : caracteres
+	statut : booleen {utilisateur actif/pas actif}
+	age : entier
+	...
+
+}
+
+structure Produit {
+	identifiant : entier
+	designation : caracteres
+	prix : reels
+	stock : entier
+	description : caracteres
+	categorie : Categories {voir structure Categories}
+	statut : booleen 
+	...
+
+}
+
+structure Categories {
+	identifiant : entier
+	nom : caracteres
+	description : caracteres
+	statut : booleen
+	...
+}
+
+
+structure Panier {
+	user : Utilisateur {voir structure Utilisateur} 
+	listeProduits : tableau
+}
+
+
+
+
+
+variables : 
+	user1,user2 : Utilisateur {voir structure Utilisateur} 
+	cat : Categories {voir structure Categories}
+	prod1,prod2,prod3,prod4 {voir structure Produit}
+	cart1,cart2 : Panier {voir structure Panier}
+	productAdd
+
+
+
+debut
+	{en lien avec structure Utilisateur grâce à la variable de type Utilisateur}
+
+	user1.identifiant <- 1
+	user1.nom <- "Dupont"
+	user1.prenom <- "Jean"
+	user1.adresse <- "4, rue du test"
+
+	user2.identifiant <- 2
+	user2.nom <- "Doe"
+	user2.prenom <- "John"
+	user2.adresse <- "5, rue du paradis"
+
+
+	afficher(bonjour ",user1.nom," ",user1.prenom)
+
+	=============================================
+	{structure Categories grâce à la variable Categories}
+
+	cat.identifiant <- 1
+	cat.nom <- "Vélo"
+	cat.description <- "Vélo qui roule"
+	=============================================
+
+	
+	prod1.identifiant <-1
+	prod1.nom <- "Vélo rouge"
+	prod1.categories <- cat {structure de la variable cat }
+	prod1.description <- "Super vélo rouge"
+	prod1.stock <- 50
+	prod1.prix <- 399.99
+
+	// Affichier la structure du produit 1, catégorie et nom
+	afficher(prod1.cat.nom)
+
+	prod2.identifiant <-2
+	prod2.nom <- "Vélo bleu"
+	prod2.categories <- cat {structure de la variable cat }
+	prod2.description <- "Super vélo bleu"
+	prod2.stock <- 30
+	prod2.prix <- 299.99
+
+	prod2.identifiant <-3
+	prod2.nom <- "Vélo vert"
+	prod2.categories <- cat {structure de la variable cat }
+	prod2.description <- "Super vélo vert"
+	prod2.stock <- 150
+	prod2.prix <- 199.99
+	=============================================
+
+
+	cart1.user <- user1
+	cart2.user <- user2
+	
+	cart1.listeProduits(0) <- productAdd(p2,5)		     {voir structure Panier, produit 2 en quantité 5}
+	{productAdd(structure produit, quantite)}
+
+
+	cart2.listeProduits(0) <- productAdd(p3,3)			  {voir structure Panier, produit 3 en quantité 3}
+
+	
+	cart1.listeProduits(1) <- productAdd(p1,3)		  {voir structure Panier, produit 1 en quantité 3}
+
+	==============================================
+	pour i <- 0 à taille(cart1.listeProduits)-1 faire
+		afficher(cart1.listeProduits(i)(0).nom, " : ",cart1.listeProduits(i)(1))
+		{Vélo rouge : 5}
+	fpour
+fin
+	
