@@ -12,7 +12,7 @@ for($cpt=1;$cpt<=$nbVal;$cpt=$cpt+1){
 	$valeur = 1000;
 	$totalValeurs = $totalValeurs + $valeur;
 
-}"
+}
 
 echo "Le total des ".$nbVal." facture(s) est de : ".$totalValeurs." €\r\n";
 
